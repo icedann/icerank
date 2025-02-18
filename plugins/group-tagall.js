@@ -4,14 +4,14 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, comma
     throw false
     }
     let pesan = args.join` `
-    let oi = `*⇢Mensaje* : ig @icedann_14
+    let oi = `*⇢Mensaje* : ig ice_rank_of
     
-    https://chat.whatsapp.com/FYXtiWZ8MqsCNomXQg1Fbj ${pesan}`
+    ICE RANK ${pesan}`
     let teks = `𝙈𝙀𝙉𝘾𝙄𝙊𝙉 𝙂𝙀𝙉𝙀𝙍𝘼𝙇
      ${oi}\n\n❄️ *⇢𝗘𝘁𝗶𝗾𝘂𝗲𝘁𝗮:*\n`
     for (let mem of participants) {
     teks += `❄️ @${mem.id.split('@')[0]}\n`}
-    teks += `— _ICEDANN BOT_`
+    teks += `— _BUEN DIA_`
     conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
     }
     handler.help = ['tagall <mesaje>','invocar <mesaje>']
